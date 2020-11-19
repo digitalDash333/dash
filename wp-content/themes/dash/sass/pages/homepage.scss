@@ -1,0 +1,112 @@
+.hero{
+	top: 0;
+	overflow: hidden;
+	.hero-bg{
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		background: url('/wp-content/uploads/2020/11/dash-hero-bg-8.png');
+		background-position: center;
+		.left-img{
+			/*background: url('/wp-content/uploads/2020/11/rock-staar-ccHVqD5P-8g-unsplash-scaled.jpg');
+			background-position: center;*/
+			img{
+			height: auto ;
+			width: 22%;
+			position: absolute;
+			z-index: 30;
+			bottom: -5%;
+			left: 18%;
+			}
+		}
+		.right-img{
+			height: auto;
+			width: 16%;
+			position: absolute;
+			z-index: 25;
+			bottom: -6%;
+			left: 55%;
+		}
+		.top{
+			position: absolute;
+			z-index: 20;
+			top: 2%;
+			right: 5%;
+			font-size: calc(125px + 6rem);
+			font-family: myriad-pro, sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			color: #333533;
+		}
+		.bottom{
+			position: absolute;
+			z-index: 27;
+			top: 20%;
+			right: 4%;
+			font-size: calc(135px + 8rem);
+			font-family: myriad-pro, sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			color: #333533;
+		}
+		.gold{
+			height: 5px;
+	    width: 22%;
+	    position: absolute;
+	    top: 96%;
+	    right: 5.5%;
+	    background: #F3C33F;
+		}
+		.hero-h2{
+			position: absolute;
+			font-size: calc(35px + 1rem);
+			font-family: ltc-broadway-engraved, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			left: 12.5%;
+			top: 12%;
+		}
+		.gold-top{
+			height: 5px;
+	    width: 40%;
+	    position: absolute;
+	    top: 27.5%;
+	    left: 12.5%;
+	    background: #F3C33F;
+		}
+		.hunnit{
+			font-family: ltc-broadway-engraved, sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			font-size: calc(125px + 6rem);
+			position: absolute;
+			top: -37%;
+			right: 0;
+			color: #CFDBD5;
+			opacity: .75;
+		}
+		.top-left{
+			position: absolute;
+			width: 12%;
+			top: 5%;
+		}
+		.navvy{
+			position: absolute;
+			bottom: 1%;
+			left:-4%;
+			.menu01{
+				padding: 1rem;
+				ul{
+					list-style-type: none;
+					li{
+						font-family: ltc-broadway-engraved, sans-serif;
+						font-weight: 400;
+						font-style: normal;
+						font-size: 20px;
+						margin-bottom: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

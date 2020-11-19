@@ -1,0 +1,158 @@
+
+@keyframes fadeUp{
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50%{
+    opacity: .7;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+}
+
+// animations
+
+// SLIDE ANIMATION CSS
+
+.fadeanim{
+  opacity: 0;
+  transition: all 1s ease;
+}
+.fadeanim.fade{
+  opacity: 1;
+}
+
+.slideanim{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .8s ease-out;
+}
+.slideanim2{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.1s .2s ease-out;
+}
+
+.slideanim.slide{
+  opacity: 1;
+  transform: translateY(0);
+}
+.slideanim2.slidedelayed{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// other slideup
+.slideup, .slideup2, .slideup3{
+    opacity: 0;
+   transform: translateY(60px);
+   // animation: fadeUp 1.5s forwards;
+}
+.slideup.fadeup{
+  animation: fadeUp 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.slideup2.fadeup{
+  animation: fadeUp 2s cubic-bezier(0.23, 1, 0.32, 1) .2s forwards;
+}
+.slideup3.fadeup{
+  animation: fadeUp 2s cubic-bezier(0.23, 1, 0.32, 1) .4s forwards;
+}
+
+
+
+
+.slideright, .slideleft, .noscroll-slideright, .noscroll-slideleft{
+  opacity: 1;
+  transform: scaleX(1);
+  transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.slideright-delay{
+  opacity: 1;
+  transform: scaleX(1);
+  transition: all 1.6s cubic-bezier(0.23, 1, 0.32, 1) .4s;
+}
+.slideright, .noscroll-slideright, .slideright-delay{
+  transform-origin: right top;
+}
+.slideleft, .noscroll-slideleft, .slideleft-delay{
+  transform-origin: left top;
+}
+.slideleft-delay{
+  opacity: 1;
+  transform: scaleX(1);
+  transition: all 1.6s cubic-bezier(0.23, 1, 0.32, 1) .4s;
+}
+.slideright.slideinright, .slideright-delay.slideinright{
+  opacity: 1;
+  transform: scaleX(0);
+}
+.noscroll-slideright.slideinright{
+  opacity: 1;
+  transform: scaleX(0);
+}
+.noscroll-slideleft.slideinleft{
+  opacity: 1;
+  transform: scaleX(0);
+}
+
+
+.slideleft.slideinleft, .slideleft-delay.slideinleft{
+  transform: scaleX(0);
+}
+
+.slidelilright{
+  opacity: 0;
+  transform: translateX(-8vw);
+  transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.slideLilLeft{
+  opacity: 0;
+  transform: translateX(8vw);
+  transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.slidelilright.slideinright, .slideLilLeft.slideinleft{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.grow{
+  width: 75%!important;
+  transition: all ease-in 1.2s;
+}
+
+// .shrink{
+//   height: 65vh!important;
+//   transition: all ease-in 1s;
+// }
+
+
+.fadeOut{
+  animation: fadeOut 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+
+
+
+
+@import "homepage";
+/*@import "catering";
+@import "about";
+@import "contact";
+@import "footer";*/
